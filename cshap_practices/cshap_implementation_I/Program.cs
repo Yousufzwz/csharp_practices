@@ -22,3 +22,10 @@ string newLastName = "Zakariya";
 string formatthis = string.Format("This person's name is {0} {2}", newName, fullName, newLastName);
 Console.WriteLine(formatthis);
 
+int age = 27;
+int numberOfApples = 12;
+
+int totalFruit = numberOfApples + 5;
+
+Console.WriteLine("I am " + age + " years old and have " + numberOfApples + " apples.");
+Console.WriteLine("If I add 5 more apples, I will have " + totalFruit + " pieces of fruit.");
