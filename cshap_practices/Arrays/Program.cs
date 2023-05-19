@@ -31,7 +31,7 @@ friendAges[1, 0] = 25.1;
 friendAges[1, 1] = 28.1;
 
 
-double[,] man =
+double[,] man = //[2,2]
 {
     {
         21.2, 20.1
@@ -39,8 +39,9 @@ double[,] man =
     {
         25.1, 28.1
     },
-   
-   
+    
+
+
 };
 
 
@@ -115,8 +116,29 @@ double[,,] friends = new double[4, 2, 2]
 
 };
 
+int[,,,] newNums = new int[2, 2, 1, 1]
+{
+    {
+        {
+            { 1 }
+        },
+        {
+            { 2 }
+        }
+    },
+    {
+        {
+            { 3 }
+        },
+        {
+            { 4 }
+        }
+    }
+};
+
+
 //jagged array
-int [] tokenList = new int[2];
+int[] tokenList = new int[2];
 int[] tokenList2 = new int[3];
 int[] tokenList3 = new int[4];
 
@@ -133,7 +155,10 @@ int[][] newTokens =
 };
 
 
-int[,,,] newNums = new int[2, 2, 1, 1];
+
+
+int a;
+
 
 
 
