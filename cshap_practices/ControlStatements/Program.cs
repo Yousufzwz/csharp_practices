@@ -1,7 +1,7 @@
 ﻿
 
 
-# region if statement
+#region if statement
 
 //var num = Console.ReadLine();
 //var x = int.Parse(num);
@@ -30,7 +30,7 @@
 
 
 
-# region switch statement
+#region switch statement
 
 
 //var input1 = Console.ReadLine();
@@ -52,10 +52,10 @@
 //        break;
 //}
 
-#endregion 
+#endregion
 
 
-# region ternary operator
+#region ternary operator
 
 //var input2 = Console.ReadLine();
 
@@ -97,7 +97,7 @@
 #endregion
 
 
-# region for, while, do while, for each loop
+#region for, while, do while, for each loop
 
 //for (int i=0; i<5; i++)
 //{
@@ -129,8 +129,8 @@
 //        continue;
 //    if (numIterator < -5)
 //        break;
-   
-    
+
+
 //    Console.WriteLine(numIterator);
 //}
 
@@ -142,7 +142,7 @@
 #endregion
 
 
-
+/*
 int[][,] newArray = new int[][,]
 {
     new int[,] { {89, 10}, {100, 90} },
@@ -165,7 +165,7 @@ for (int i = 0; i < newArray.Length; i++)
         }
     }
 }
-
+*/
 
 /*
 int[][] newArray2 = new int[3][];
@@ -245,3 +245,181 @@ for (int i = 0; i < dataRow; i++)
 }
 
 */
+
+
+
+
+//int[,] matrix = {
+//    {1, 2, 3},
+//    {4, 5, 6},
+//    {7, 8, 9}
+//};
+
+
+
+//for (int i = 0; i < matrix.GetLength(0); i++)
+//{
+//    for (int j = i + 1; j < matrix.GetLength(1); j++)
+//    {
+//        int temp = matrix[i, j];
+//        matrix[i, j] = matrix[j, i];
+//        matrix[j, i] = temp;
+//    }
+//}
+
+
+//for (int i = 0; i < matrix.GetLength(1); i++)
+//{
+//    for (int j = 0; j < matrix.GetLength(0); j++)
+//    {
+//        Console.Write(matrix[i, j] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+
+
+
+
+//int[,] student = { { 10, 20}, { 30, 40} };
+
+//for(int i = 0; i < student.GetLength(0);i++)
+//{
+//    for(int j =0; j < student.GetLength(1); j++)
+//    {
+//        Console.WriteLine(student[i,j]);
+
+//    }
+//}
+
+//int[][] new3d = new int[3][];
+
+
+
+//string names = "mahmudul,hasan,rakib,uddin,ahmad,esa,abu,sufian,zakariya";
+//var people = names.Split(',');
+
+//var nameInput= Console.ReadLine();
+//var peoplenames = nameInput.Split(' ');
+
+//foreach ( var person in peoplenames)
+//{
+//    Console.Write(person + " ");
+
+
+//}
+
+
+//var inputs= int.Parse(Console.ReadLine());
+
+//int s = 0;
+
+//while(inputs>0)
+//{
+//    var mod = inputs % 10;
+//    s += mod;
+//    inputs /= 10;
+//}
+//Console.WriteLine(s);
+
+
+//int[] numbers = { 2, 4, 6, 8, 10 };
+//int sum = 0;
+
+//foreach (int number in numbers)
+//{
+//    sum += number;
+//}
+
+//Console.WriteLine("Sum of numbers: " + sum);
+
+/*
+var name = "waterfruit";
+
+var characters= name.ToCharArray();
+
+for (int i = characters.Length -1 ; i >=0 ; i--)
+{
+    Console.Write(characters[i]);
+}
+
+
+
+
+Array.Reverse(characters);
+
+foreach (char c in characters)
+{ 
+    Console.Write(c);
+}
+
+var nameposition = name.IndexOf('f');
+Console.WriteLine(nameposition);
+
+name = name.Replace("f", " f");
+Console.WriteLine(name);
+
+var firstPart = name.IndexOf(' ');
+var lastPart= name.Substring(firstPart + 1);
+Console.WriteLine(lastPart);
+
+*/
+
+string[,] studentRecords = new string[100, 2]; // Assuming a maximum of 100 students
+
+int index = 0; // Variable to keep track of the current index
+
+// Take input from students and store their names and IDs
+while (true)
+{
+    Console.WriteLine("Enter student ID (or 0 to exit):");
+    int id = int.Parse(Console.ReadLine());
+
+    if (id == 0)
+        break;
+
+    Console.WriteLine("Enter student name:");
+    string name = Console.ReadLine();
+
+    // Store the student name and ID in the array
+    studentRecords[index, 0] = id.ToString();
+    studentRecords[index, 1] = name;
+
+    index++; // Increment the index for the next student
+}
+
+// Retrieve student name by ID
+while (true)
+{
+    Console.WriteLine("Enter student ID to retrieve the name (or 0 to exit):");
+    int id = int.Parse(Console.ReadLine());
+
+    if (id == 0)
+        break;
+
+    string studentName = GetStudentName(studentRecords, id);
+
+    if (studentName != null)
+    {
+        Console.WriteLine("Student Name: " + studentName);
+    }
+    else
+    {
+        Console.WriteLine("Student not found!");
+    }
+}
+    
+
+    // Helper method to retrieve the student name by ID from the multidimensional array
+    static string GetStudentName(string[,] studentRecords, int id)
+{
+    for (int i = 0; i < studentRecords.GetLength(0); i++)
+    {
+        if (studentRecords[i, 0] == id.ToString())
+        {
+            return studentRecords[i, 1];
+        }
+    }
+
+    return null;
+}
