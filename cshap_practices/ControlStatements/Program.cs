@@ -365,61 +365,79 @@ Console.WriteLine(lastPart);
 
 */
 
-string[,] studentRecords = new string[100, 2]; // Assuming a maximum of 100 students
+//student data input-output
+/*
+var num1 = int.Parse(Console.ReadLine());
+var num2 = int.Parse(Console.ReadLine());
 
-int index = 0; // Variable to keep track of the current index
+string[,] studentData = new string[num1, num2];
 
-// Take input from students and store their names and IDs
+for (int i = 0; i < num1; i++)
+{
+    Console.WriteLine($"Enter the name and ID of student {i + 1}:");
+    string input = Console.ReadLine();
+    string[] data = input.Split(',');
+
+    studentData[i, 0] = data[0];  
+    studentData[i, 1] = data[1];  
+}
+
+for (int i = 0; i < num1; i++)
+{
+    string name = studentData[i, 0];
+    string id = studentData[i, 1];
+    Console.WriteLine($"{name} {id}");
+}
+*/
+/*
+string input;
 while (true)
 {
-    Console.WriteLine("Enter student ID (or 0 to exit):");
-    int id = int.Parse(Console.ReadLine());
+    Console.WriteLine("Enter a string (or 'end' to exit):");
+    input = Console.ReadLine();
 
-    if (id == 0)
+    if (input.ToLower() == "end")
         break;
 
-    Console.WriteLine("Enter student name:");
-    string name = Console.ReadLine();
+    int sum = 0;
+    foreach (char c in input)
+    {
+        sum += c;
+    }
 
-    // Store the student name and ID in the array
-    studentRecords[index, 0] = id.ToString();
-    studentRecords[index, 1] = name;
-
-    index++; // Increment the index for the next student
+    Console.WriteLine($"Sum of ASCII values: {sum}");
 }
+*/
 
-// Retrieve student name by ID
-while (true)
+
+
+// Define the jagged array
+int[][] jaggedArray = new int[3][];
+
+// Input and store data in the jagged array
+for (int i = 0; i < jaggedArray.Length; i++)
 {
-    Console.WriteLine("Enter student ID to retrieve the name (or 0 to exit):");
-    int id = int.Parse(Console.ReadLine());
+    Console.WriteLine($"Enter the number of elements for array {i + 1}:");
+    int size = int.Parse(Console.ReadLine());
 
-    if (id == 0)
-        break;
+    jaggedArray[i] = new int[size];
 
-    string studentName = GetStudentName(studentRecords, id);
-
-    if (studentName != null)
+    Console.WriteLine($"Enter {size} elements for array {i + 1}:");
+    for (int j = 0; j < jaggedArray[i].Length; j++)
     {
-        Console.WriteLine("Student Name: " + studentName);
-    }
-    else
-    {
-        Console.WriteLine("Student not found!");
+        jaggedArray[i][j] = int.Parse(Console.ReadLine());
     }
 }
-    
 
-    // Helper method to retrieve the student name by ID from the multidimensional array
-    static string GetStudentName(string[,] studentRecords, int id)
+// Print the stored data
+Console.WriteLine("The stored data in the jagged array:");
+for (int i = 0; i < jaggedArray.Length; i++)
 {
-    for (int i = 0; i < studentRecords.GetLength(0); i++)
+    Console.Write($"Array {i + 1}: ");
+    for (int j = 0; j < jaggedArray[i].Length; j++)
     {
-        if (studentRecords[i, 0] == id.ToString())
-        {
-            return studentRecords[i, 1];
-        }
+        Console.Write(jaggedArray[i][j] + " ");
     }
-
-    return null;
+    Console.WriteLine();
 }
+
