@@ -214,13 +214,15 @@ Console.WriteLine(lastPart);
 
 
 
+
+
 //using System.Text;
 
 //var message = "adfjlkdsfjlasdkjffjlfffoidffffflllaffffffahihdsfa";
 //StringBuilder seletedMessage = new StringBuilder(message);
-//for(int i=0; i<message.Length; i++)
+//for (int i = 0; i < message.Length; i++)
 //{
-//    if (seletedMessage[i] =='f')
+//    if (seletedMessage[i] == 'f')
 
 //        seletedMessage[i] = 'W';
 
@@ -230,74 +232,131 @@ Console.WriteLine(lastPart);
 //Console.WriteLine(message);
 
 
-using System.Xml;
-
-string originalString = "string,,, words!";
-string substring1 = originalString.Substring(10); 
-string substring2 = originalString.Substring(0, 6);
-Console.WriteLine(substring1);
-Console.WriteLine(substring2);
 
 
-var sentence = "What is you doing Sulaiman";
-
-var findIndex1 = sentence.IndexOf("Sulaiman");
-Console.WriteLine(findIndex1);
-
-var findIndex2 = sentence.Replace("Sulaiman", "Al-Amin");
-Console.WriteLine(findIndex2);
-
-var findIndex3 = findIndex2.IndexOf("-");
-var lastNamePart=findIndex2.Substring(findIndex3+1);  
-Console.WriteLine(lastNamePart);
-
-var mainText = "This car is made by Toyota";
-var upperText=mainText.ToUpper();
-var lowerText=mainText.ToLower();
-Console.WriteLine($"{upperText} {lowerText}");
-
-var searchedText = "Toyota";
-var uText=searchedText.ToUpper();
-var modifiedText=mainText.Replace(searchedText, uText);
-Console.WriteLine(modifiedText);
-
-var replacedText = mainText.Replace("Toyota", "TOYOTA");
-Console.WriteLine(replacedText);
-
-var name = "strings";
-var newName=name.Trim('s');
-Console.WriteLine(newName);
-
-newName=name.Replace("r", string.Empty);
-Console.WriteLine(newName);
+//string originalString = "string,,, words!";
+//string substring1 = originalString.Substring(10); 
+//string substring2 = originalString.Substring(0, 6);
+//Console.WriteLine(substring1);
+//Console.WriteLine(substring2);
 
 
+//var sentence = "What is you doing Sulaiman";
 
-var charArray =name.ToCharArray();
-Array.Reverse(charArray);
+//var findIndex1 = sentence.IndexOf("Sulaiman");
+//Console.WriteLine(findIndex1);
 
-var reversedName = new string(charArray); //converted to string 
-Console.WriteLine(reversedName);
+//var findIndex2 = sentence.Replace("Sulaiman", "Al-Amin");
+//Console.WriteLine(findIndex2);
 
-var objectName = "     Beauteous   ";
-var trimmedStart = objectName.TrimStart();
-var trimmedEnd = trimmedStart.TrimEnd();
-Console.WriteLine($"{trimmedStart} {trimmedEnd}");
+//var findIndex3 = findIndex2.IndexOf("-");
+//var lastNamePart=findIndex2.Substring(findIndex3+1);  
+//Console.WriteLine(lastNamePart);
 
-string text = "Man";
-char character = 'P';
+//var mainText = "This car is made by Toyota";
+//var upperText=mainText.ToUpper();
+//var lowerText=mainText.ToLower();
+//Console.WriteLine($"{upperText} {lowerText}");
 
-string textToString = text.ToString(); 
-string characterToString = character.ToString();
+//var searchedText = "Toyota";
+//var uText=searchedText.ToUpper();
+//var modifiedText=mainText.Replace(searchedText, uText);
+//Console.WriteLine(modifiedText);
 
-Console.WriteLine(textToString);
-Console.WriteLine(characterToString);
+//var replacedText = mainText.Replace("Toyota", "TOYOTA");
+//Console.WriteLine(replacedText);
+
+//var name = "strings";
+//var newName=name.Trim('s');
+//Console.WriteLine(newName);
+
+//newName=name.Replace("r", string.Empty);
+//Console.WriteLine(newName);
 
 
-var s = "World";
-var s2 = "is not permanent";
 
-var concateThem= string.Concat(s+" ", s2);
-Console.WriteLine(concateThem);
+//var charArray =name.ToCharArray();
+//Array.Reverse(charArray);
+
+//var reversedName = new string(charArray); //converted to string 
+//Console.WriteLine(reversedName);
+
+//var objectName = "     Beauteous   ";
+//var trimmedStart = objectName.TrimStart();
+//var trimmedEnd = trimmedStart.TrimEnd();
+//Console.WriteLine($"{trimmedStart} {trimmedEnd}");
+
+//string text = "Man";
+//char character = 'P';
+
+//string textToString = text.ToString(); 
+//string characterToString = character.ToString();
+
+//Console.WriteLine(textToString);
+//Console.WriteLine(characterToString);
+
+
+//var s = "World";
+//var s2 = "is not permanent";
+
+//var concateThem= string.Concat(s+" ", s2);
+//Console.WriteLine(concateThem);
+
+
+var textString1 = "Mahmud is an honest man";
+bool textString2 = textString1.StartsWith("Mahmud");
+bool textString3 = textString1.StartsWith("Zakariya");
+Console.WriteLine(textString2);
+Console.WriteLine(textString3);
+
+string [] fruits = {"apple", "mango", "pineapple", "lemon", "watermelon"};
+
+foreach (string selectedFruits in fruits)
+{
+    if(selectedFruits.StartsWith("ap") || selectedFruits.EndsWith("le"))
+    {
+        Console.WriteLine(selectedFruits);
+    }
+}
+
+
+
+var textString4 = "He likes styding new topics";
+var textString5 = textString4.Replace("styding", "teaching");
+Console.WriteLine(textString5);
+
+
+var textString6 = "Good, work!!";
+var textString7 = textString6.Replace(',', ';').Replace("Good", "Best");
+Console.WriteLine( textString7);
+
+
+string textString8 = "NO\r\nworld!\r\nThis is\r\na test\r\n";
+string textString9 = textString8.ReplaceLineEndings("*|");
+
+Console.Write(textString8);
+Console.WriteLine(textString9);
+
+
+string textString10 = "WOW! it is good.";
+var textString11 = textString10.Remove(0, 5);
+Console.WriteLine(textString11);
+
+char[] sChar = { '2', '1'};
+int charCount=textString10.IndexOfAny(sChar);
+Console.WriteLine(charCount);
+
+var textString12 = "Although Safia is a good girl";
+
+char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+var vIndex=textString12.IndexOfAny(vowels, 8);
+
+Console.WriteLine($"Vowel found at: { vIndex}th index");
+
+
+
+
+
 
 
