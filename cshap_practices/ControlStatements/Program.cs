@@ -274,12 +274,18 @@ Console.WriteLine(lastPart);
 //Console.WriteLine(newName);
 
 
-
-//var charArray =name.ToCharArray();
+//var name2 = "water";
+//var charArray = name2.ToCharArray();
 //Array.Reverse(charArray);
+//Console.WriteLine(charArray);
+
+//var reversedName2 = charArray.ToString();
+//Console.WriteLine(reversedName2);
 
 //var reversedName = new string(charArray); //converted to string 
 //Console.WriteLine(reversedName);
+
+
 
 //var objectName = "     Beauteous   ";
 //var trimmedStart = objectName.TrimStart();
@@ -303,56 +309,128 @@ Console.WriteLine(lastPart);
 //Console.WriteLine(concateThem);
 
 
-var textString1 = "Mahmud is an honest man";
-bool textString2 = textString1.StartsWith("Mahmud");
-bool textString3 = textString1.StartsWith("Zakariya");
-Console.WriteLine(textString2);
-Console.WriteLine(textString3);
+//var textString1 = "Mahmud is an honest man";
+//bool textString2 = textString1.StartsWith("Mahmud");
+//bool textString3 = textString1.StartsWith("Zakariya");
+//Console.WriteLine(textString2);
+//Console.WriteLine(textString3);
 
-string [] fruits = {"apple", "mango", "pineapple", "lemon", "watermelon"};
+//string [] fruits = {"apple", "mango", "pineapple", "lemon", "watermelon"};
 
-foreach (string selectedFruits in fruits)
+//foreach (string selectedFruits in fruits)
+//{
+//    if(selectedFruits.StartsWith("ap") || selectedFruits.EndsWith("le"))
+//    {
+//        Console.WriteLine(selectedFruits);
+//    }
+//}
+
+
+
+//var textString4 = "He likes styding new topics";
+//var textString5 = textString4.Replace("styding", "teaching");
+//Console.WriteLine(textString5);
+
+
+//var textString6 = "Good, work!!";
+//var textString7 = textString6.Replace(',', ';').Replace("Good", "Best");
+//Console.WriteLine( textString7);
+
+
+//string textString8 = "NO\r\nworld!\r\nThis is\r\na test\r\n";
+//string textString9 = textString8.ReplaceLineEndings("*|");
+
+//Console.Write(textString8);
+//Console.WriteLine(textString9);
+
+
+//string textString10 = "WOW! it is good.";
+//var textString11 = textString10.Remove(0, 5);
+//Console.WriteLine(textString11);
+
+//char[] sChar = { '2', '1'};
+//int charCount=textString10.IndexOfAny(sChar);
+//Console.WriteLine(charCount);
+
+//var textString12 = "Although Safia is a good girl";
+
+//char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+//var vIndex=textString12.IndexOfAny(vowels, 8);
+
+//Console.WriteLine($"Vowel found at: {vIndex}th index");
+
+
+var text1 = "876.09755";
+double text2;
+bool checking1=double.TryParse(text1, out text2);
+if( checking1 )
 {
-    if(selectedFruits.StartsWith("ap") || selectedFruits.EndsWith("le"))
+    
+    Console.WriteLine(text2);
+}
+
+else
+{
+    Console.WriteLine("Invalid");
+}
+
+
+var text3 = "11, 12, 13, 14, abc, 15";
+int[] textArray = new int[6];
+
+string[]spilttedText =text3.Split(',');
+
+
+for(int i = 0; i < spilttedText.Length; i++)
+{
+    if (int.TryParse(spilttedText[i], out textArray[i]))
     {
-        Console.WriteLine(selectedFruits);
+        Console.WriteLine(textArray[i]);
     }
 }
 
 
 
-var textString4 = "He likes styding new topics";
-var textString5 = textString4.Replace("styding", "teaching");
-Console.WriteLine(textString5);
+
+char character = 'A';
+bool isAscii = char.IsAscii(character);
+Console.WriteLine($"Is '{character}' an ASCII character? {isAscii}");
+
+var text4 = "Worlds 世";
+bool asciiCheck1 = true;
+foreach(char c in text4)
+{
+    if (!char.IsAscii(c))
+    {
+        asciiCheck1 = false;
+        break;
+    }
+   
+}
+Console.WriteLine( asciiCheck1);
 
 
-var textString6 = "Good, work!!";
-var textString7 = textString6.Replace(',', ';').Replace("Good", "Best");
-Console.WriteLine( textString7);
+var text5 = "mangoes are ripe";
+var text6 = text5.LastIndexOf('r');
+Console.WriteLine(text6);
 
 
-string textString8 = "NO\r\nworld!\r\nThis is\r\na test\r\n";
-string textString9 = textString8.ReplaceLineEndings("*|");
+string text7 = "aan";
+string text8 = "Lichia";
+int text9 =string.Compare(text7, text8);
+Console.WriteLine(text9);
 
-Console.Write(textString8);
-Console.WriteLine(textString9);
+string str1 = "apple";
+string str2 = "banana";
+int result = string.Compare(str1, str2);
+Console.WriteLine(result);
 
+string str3 = "apple";
+string str4 = "apply";
+int result2 = string.Compare(str3, 1, str4, 1, 3);
+Console.WriteLine(result2); 
 
-string textString10 = "WOW! it is good.";
-var textString11 = textString10.Remove(0, 5);
-Console.WriteLine(textString11);
-
-char[] sChar = { '2', '1'};
-int charCount=textString10.IndexOfAny(sChar);
-Console.WriteLine(charCount);
-
-var textString12 = "Although Safia is a good girl";
-
-char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
-
-var vIndex=textString12.IndexOfAny(vowels, 8);
-
-Console.WriteLine($"Vowel found at: { vIndex}th index");
 
 
 
