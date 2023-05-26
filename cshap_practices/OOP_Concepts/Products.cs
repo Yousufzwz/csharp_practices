@@ -3,9 +3,9 @@
 
 public class Products
 {
-   int  a, b;
    public string name;
    public double price;
+    int quantity;
     string model = "BW1";
     string brand="lenovo";
 
@@ -49,6 +49,26 @@ public class Products
     {
         return model+" "+brand;
     }
+
+    public string GetNames
+    {
+        get { return model + " " + brand; }
+    }
+
+    
+    public string PaperColor { get; private set; }
+    public string PaperShape { get; private set; }
+
+
+     public Products(string paperColor, string paperShape)
+    {
+        PaperColor = paperColor;
+        PaperShape = paperShape;
+    }
+
+
+  
+
 
 
 }

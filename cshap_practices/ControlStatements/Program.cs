@@ -274,16 +274,27 @@ Console.WriteLine(lastPart);
 //Console.WriteLine(newName);
 
 
-//var name2 = "water";
-//var charArray = name2.ToCharArray();
-//Array.Reverse(charArray);
-//Console.WriteLine(charArray);
 
-//var reversedName2 = charArray.ToString();
-//Console.WriteLine(reversedName2);
 
-//var reversedName = new string(charArray); //converted to string 
-//Console.WriteLine(reversedName);
+
+
+
+
+var name2 = "water";
+var charArray = name2.ToCharArray();
+Array.Reverse(charArray);
+Console.WriteLine(charArray);
+
+var reversedName2 = charArray.ToString();
+Console.WriteLine(reversedName2);
+
+var reversedName = new string(charArray); //converted to string 
+Console.WriteLine(reversedName);
+
+
+
+
+
 
 
 
@@ -361,75 +372,76 @@ Console.WriteLine(lastPart);
 //Console.WriteLine($"Vowel found at: {vIndex}th index");
 
 
-var text1 = "876.09755";
-double text2;
-bool checking1=double.TryParse(text1, out text2);
-if( checking1 )
-{
+
+//var text1 = "876.09755";
+//double text2;
+//bool checking1=double.TryParse(text1, out text2);
+//if( checking1 )
+//{
     
-    Console.WriteLine(text2);
-}
+//    Console.WriteLine(text2);
+//}
 
-else
-{
-    Console.WriteLine("Invalid");
-}
-
-
-var text3 = "11, 12, 13, 14, abc, 15";
-int[] textArray = new int[6];
-
-string[]spilttedText =text3.Split(',');
+//else
+//{
+//    Console.WriteLine("Invalid");
+//}
 
 
-for(int i = 0; i < spilttedText.Length; i++)
-{
-    if (int.TryParse(spilttedText[i], out textArray[i]))
-    {
-        Console.WriteLine(textArray[i]);
-    }
-}
+//var text3 = "11, 12, 13, 14, abc, 15";
+//int[] textArray = new int[6];
+
+//string[]spilttedText =text3.Split(',');
+
+
+//for(int i = 0; i < spilttedText.Length; i++)
+//{
+//    if (int.TryParse(spilttedText[i], out textArray[i]))
+//    {
+//        Console.WriteLine(textArray[i]);
+//    }
+//}
 
 
 
 
-char character = 'A';
-bool isAscii = char.IsAscii(character);
-Console.WriteLine($"Is '{character}' an ASCII character? {isAscii}");
+//char character = 'A';
+//bool isAscii = char.IsAscii(character);
+//Console.WriteLine($"Is '{character}' an ASCII character? {isAscii}");
 
-var text4 = "Worlds 世";
-bool asciiCheck1 = true;
-foreach(char c in text4)
-{
-    if (!char.IsAscii(c))
-    {
-        asciiCheck1 = false;
-        break;
-    }
+//var text4 = "Worlds 世";
+//bool asciiCheck1 = true;
+//foreach(char c in text4)
+//{
+//    if (!char.IsAscii(c))
+//    {
+//        asciiCheck1 = false;
+//        break;
+//    }
    
-}
-Console.WriteLine( asciiCheck1);
+//}
+//Console.WriteLine( asciiCheck1);
 
 
-var text5 = "mangoes are ripe";
-var text6 = text5.LastIndexOf('r');
-Console.WriteLine(text6);
+//var text5 = "mangoes are ripe";
+//var text6 = text5.LastIndexOf('r');
+//Console.WriteLine(text6);
 
 
-string text7 = "aan";
-string text8 = "Lichia";
-int text9 =string.Compare(text7, text8);
-Console.WriteLine(text9);
+//string text7 = "aan";
+//string text8 = "Lichia";
+//int text9 =string.Compare(text7, text8);
+//Console.WriteLine(text9);
 
-string str1 = "apple";
-string str2 = "banana";
-int result = string.Compare(str1, str2);
-Console.WriteLine(result);
+//string str1 = "apple";
+//string str2 = "banana";
+//int result = string.Compare(str1, str2);
+//Console.WriteLine(result);
 
-string str3 = "apple";
-string str4 = "apply";
-int result2 = string.Compare(str3, 1, str4, 1, 3);
-Console.WriteLine(result2); 
+//string str3 = "apple";
+//string str4 = "apply";
+//int result2 = string.Compare(str3, 1, str4, 1, 3);
+//Console.WriteLine(result2); 
 
 
 
