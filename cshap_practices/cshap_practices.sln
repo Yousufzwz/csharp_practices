@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputOutput", "InputOutput\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlStatements", "ControlStatements\ControlStatements.csproj", "{5F7F1450-2917-4472-8D5B-B7854B1B3EBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Concepts", "OOP_Concepts\OOP_Concepts.csproj", "{52A6E610-7F37-44BF-BC5E-5A654BE60F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Concepts", "OOP_Concepts\OOP_Concepts.csproj", "{52A6E610-7F37-44BF-BC5E-5A654BE60F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Practices", "OOP_Practices\OOP_Practices.csproj", "{30421476-B828-45C9-8D6C-DEE00B8BC20F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{52A6E610-7F37-44BF-BC5E-5A654BE60F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52A6E610-7F37-44BF-BC5E-5A654BE60F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52A6E610-7F37-44BF-BC5E-5A654BE60F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

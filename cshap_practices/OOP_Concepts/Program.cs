@@ -35,10 +35,22 @@ var getProduct = products.GetNames;
 Console.WriteLine(getProduct);
 
 Shirt newShirt = new Shirt("Green", "XXL");
-Console.WriteLine($"US Polo :{newShirt.ShirtColor}, Shirt Size: {newShirt.ShirtSize}");
+Shirt newShirt2 = new Shirt("White", "XL");
+Shirt newShirt3 = new Shirt("Black", "M");
 
-Products getPaper= new Products("Yellow", "A4");
+Console.WriteLine($"US Polo :{newShirt.ShirtColor}, Shirt Size: {newShirt.ShirtSize}");
+Console.WriteLine($"PUMA :{newShirt2.ShirtColor}, Shirt Size: {newShirt2.ShirtSize}");
+Console.WriteLine($"A&Q :{newShirt3.ShirtColor}, Shirt Size: {newShirt3.ShirtSize}");
+
+
+Products getPaper = new Products("Yellow", "A4");
 Console.WriteLine($"Paper Color: {getPaper.PaperColor}, Paper Size:{getPaper.PaperColor}");
 
+Console.WriteLine($"Total Production: {Shirt.productionCount}");
 
+Categories.ProductSerial();
+
+AllCategory categoryType = new SelectedCategory();
+categoryType.Name("9ZA19911", "UI909US");
+Console.WriteLine(((SelectedCategory)categoryType).GetCategory());
 

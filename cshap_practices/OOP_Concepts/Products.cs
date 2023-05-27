@@ -1,14 +1,17 @@
 ﻿
 
 
-public class Products
+using System.Security.Cryptography.X509Certificates;
+
+public class Products 
 {
+    
    public string name;
    public double price;
     int quantity;
     string model = "BW1";
     string brand="lenovo";
-
+    
    public int Sum( )
     {
        int x = 2;
@@ -36,7 +39,6 @@ public class Products
 
     public int ProductCount(int x, int y)
     {
-
         return x - y;
     }
 

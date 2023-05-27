@@ -1,6 +1,6 @@
 ﻿
 
-public class Electronics : Products
+public sealed class Electronics : Products
 {
     
 
