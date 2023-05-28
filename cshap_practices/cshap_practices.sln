@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlStatements", "Contro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Concepts", "OOP_Concepts\OOP_Concepts.csproj", "{52A6E610-7F37-44BF-BC5E-5A654BE60F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Practices", "OOP_Practices\OOP_Practices.csproj", "{30421476-B828-45C9-8D6C-DEE00B8BC20F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Practices", "OOP_Practices\OOP_Practices.csproj", "{30421476-B828-45C9-8D6C-DEE00B8BC20F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{0464F69B-2F0E-4662-94BC-89E790690B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30421476-B828-45C9-8D6C-DEE00B8BC20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0464F69B-2F0E-4662-94BC-89E790690B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0464F69B-2F0E-4662-94BC-89E790690B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0464F69B-2F0E-4662-94BC-89E790690B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0464F69B-2F0E-4662-94BC-89E790690B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
