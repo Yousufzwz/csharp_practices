@@ -39,6 +39,7 @@ double[,] man = //[2,2]
     {
         25.1, 28.1
     },
+ 
     
 
 
@@ -145,7 +146,7 @@ int[] tokenList3 = new int[4];
 int [][] tokens = new int[2][];
 tokens[0] = tokenList;
 tokens[1]=tokenList2;
-tokens[2]=tokenList3;
+
 
 
 /*
@@ -381,7 +382,7 @@ for (int i = 0; i < jaggedArray.Length; i++)
     Console.WriteLine();
 }
 */
-
+/*
 int[][] employeeData = new int[3][];
 employeeData[0] = new int[] { 10, 20, 30, 40, 50 };
 employeeData[1] = new int[1] { 100 };
@@ -414,8 +415,28 @@ for (int i = 0; i < officeData.Length; i++)
     }
 }
 
+*/
+
+int[] data1 = { }; //new int[4];
+int[,] data2 =
+{
+    {10,10,102},
+    {11,21,111},
+    
+};
+
+for(int i=0; i<data2.GetLength(0); i++)
+{
+    for(int j=0; j < data2.GetLength(1); j++)
+    {
+        Console.WriteLine(data2[i, j]);
+    }
+}
+    
 
 
+
+int a;
 
 
 

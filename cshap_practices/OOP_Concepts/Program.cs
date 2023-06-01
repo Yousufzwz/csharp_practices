@@ -54,3 +54,15 @@ AllCategory categoryType = new SelectedCategory();
 categoryType.Name("9ZA19911", "UI909US");
 Console.WriteLine(((SelectedCategory)categoryType).GetCategory());
 
+
+
+Department department = new Section1();
+
+Department department2 = new Section1("A","010");
+
+Department department3 = new Section2("B", "25A");
+
+department3.ID = 2000;
+department2.RoomNumbers = 100;
+department.FacultyName = "CS-Engineering";
+Console.WriteLine(department.FacultyName);

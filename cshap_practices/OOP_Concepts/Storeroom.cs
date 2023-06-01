@@ -1,0 +1,7 @@
+﻿
+
+
+internal class Storeroom:Kitchen
+{
+}
+

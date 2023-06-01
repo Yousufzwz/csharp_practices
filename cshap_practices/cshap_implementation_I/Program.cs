@@ -62,3 +62,8 @@ Console.WriteLine("Size of decimal: {0} bits", sizeof(decimal) * 8);
 Console.WriteLine("Size of object: {0} bits", IntPtr.Size * 8);
 Console.WriteLine("Size of string: {0} bits", IntPtr.Size * 8);
 
+
+int[][] jaggedArray1=new int[2][];
+jaggedArray1[0] = new int[] {10, 20, 30};
+jaggedArray1[1] = new int[] {31,32};
+jaggedArray1[2] = new int[]{ 1};
