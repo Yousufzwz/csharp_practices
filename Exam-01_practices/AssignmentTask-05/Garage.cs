@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyCodes.Core
-{
+namespace MyCodes.Core;
+
     internal  class Garage
     {
         public int TotalVehicleCount { get; set; }
@@ -19,4 +19,4 @@ namespace MyCodes.Core
         public int Add(Vehicle t) { return TotalVehicleCount++; }
 
     }
-}
+

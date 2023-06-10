@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyCodes.Core
+namespace MyCodes.Core;
+
+internal abstract class Vehicle
 {
-    internal abstract class Vehicle
-    {
-       
-    }
+   
 }
