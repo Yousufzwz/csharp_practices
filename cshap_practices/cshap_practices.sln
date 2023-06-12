@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfacePractices", "InterfacePractices\InterfacePractices.csproj", "{8D33B21E-E580-4E80-BF59-DDCA53F5D879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Implementation_I", "OOP_Implementation_I\OOP_Implementation_I.csproj", "{802A1B13-AC69-4CCC-8AC9-10359466C586}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Implementation_I", "OOP_Implementation_I\OOP_Implementation_I.csproj", "{802A1B13-AC69-4CCC-8AC9-10359466C586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam-01_Practices", "Exam-01_Practices\Exam-01_Practices.csproj", "{71F5CEAD-C9A4-4A00-B423-2644AB6085B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{802A1B13-AC69-4CCC-8AC9-10359466C586}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{802A1B13-AC69-4CCC-8AC9-10359466C586}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{802A1B13-AC69-4CCC-8AC9-10359466C586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F5CEAD-C9A4-4A00-B423-2644AB6085B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F5CEAD-C9A4-4A00-B423-2644AB6085B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F5CEAD-C9A4-4A00-B423-2644AB6085B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F5CEAD-C9A4-4A00-B423-2644AB6085B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

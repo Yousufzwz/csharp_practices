@@ -154,7 +154,7 @@ int[][,] newArray = new int[][,]
 {
     new int[,] { {89, 10}, {100, 90} },
     new int[,] { {20, 5}, {11, 12}, {18, 19} },
-    new int[,] { {21, 22}, {23, 24}, {25, 26} }
+    new int[,]  
 };
 
 // Iterate through each element in the array
