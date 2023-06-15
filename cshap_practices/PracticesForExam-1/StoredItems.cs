@@ -9,15 +9,14 @@ namespace PracticesForExam_1;
 
 internal class StoredItems
 {
-    public int counter;
-    public int TotalCount;
+    public int TotalCount { get; set; }
     public StoredItems(Garments product)
     {
         TotalCount++;
     }
     public void Count(Garments anotherProduct)
     {
-        counter++;
+        TotalCount++;
 
     }
 }
