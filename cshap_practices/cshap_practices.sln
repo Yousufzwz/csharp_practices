@@ -29,13 +29,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface_Practices", "Inte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics_Practices", "Generics_Practices\Generics_Practices.csproj", "{463ECB1A-0835-40CC-86C3-6DA97B59DB4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structure", "Structure\Structure.csproj", "{5CE19295-081D-4F1C-93CF-7E6F31369402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structure", "Structure\Structure.csproj", "{5CE19295-081D-4F1C-93CF-7E6F31369402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{A7598DDB-3368-4B9D-9458-CD8C81584ADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{A7598DDB-3368-4B9D-9458-CD8C81584ADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{05879AB5-C7BF-4824-B4AB-DF1DD49ECBC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{05879AB5-C7BF-4824-B4AB-DF1DD49ECBC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterModifier", "ParameterModifier\ParameterModifier.csproj", "{4DB33190-5646-4C7C-BE5A-3D284E9632ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParameterModifier", "ParameterModifier\ParameterModifier.csproj", "{4DB33190-5646-4C7C-BE5A-3D284E9632ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic&NonGeneric_Collections", "Generic&NonGeneric_Collections\Generic&NonGeneric_Collections.csproj", "{A4AFDFB3-CAF0-4905-B5DD-230244C94D46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuple", "Tuple\Tuple.csproj", "{05301636-E0D7-4B20-A86F-1B6249B360AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableType", "NullableType\NullableType.csproj", "{8C447357-B506-4193-AC37-537339823C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousType", "AnonymousType\AnonymousType.csproj", "{72409D07-2E8D-4741-BD5D-8870E2D16FD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +119,22 @@ Global
 		{4DB33190-5646-4C7C-BE5A-3D284E9632ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DB33190-5646-4C7C-BE5A-3D284E9632ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DB33190-5646-4C7C-BE5A-3D284E9632ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AFDFB3-CAF0-4905-B5DD-230244C94D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AFDFB3-CAF0-4905-B5DD-230244C94D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AFDFB3-CAF0-4905-B5DD-230244C94D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AFDFB3-CAF0-4905-B5DD-230244C94D46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05301636-E0D7-4B20-A86F-1B6249B360AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05301636-E0D7-4B20-A86F-1B6249B360AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05301636-E0D7-4B20-A86F-1B6249B360AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05301636-E0D7-4B20-A86F-1B6249B360AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C447357-B506-4193-AC37-537339823C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C447357-B506-4193-AC37-537339823C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C447357-B506-4193-AC37-537339823C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C447357-B506-4193-AC37-537339823C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72409D07-2E8D-4741-BD5D-8870E2D16FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72409D07-2E8D-4741-BD5D-8870E2D16FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72409D07-2E8D-4741-BD5D-8870E2D16FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72409D07-2E8D-4741-BD5D-8870E2D16FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
