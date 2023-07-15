@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 namespace Generics_Practices;
 
 internal class Coordinates<A, B>
+    where A : class
 {
     internal A X { get; set; }
     internal B Y { get; set; }
-   
-    
-    public void Add<S>(S add)
+
+
+    public void Add<S>(S add) where S : class, new ()
     {
         A x = X;
         B y = Y;
