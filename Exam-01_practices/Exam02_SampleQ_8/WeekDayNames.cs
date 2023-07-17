@@ -12,7 +12,7 @@ internal enum WeekDayNames
     Saturday,
     Sunday,
     Monday,
-    Tuesday,
+    Tuesday = 98,
     Wednesday,
     Thursday
 }

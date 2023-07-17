@@ -21,4 +21,9 @@ internal class MyTests<T1, T2>
         Console.WriteLine(sampleTuple.Item2);
 
     }
+
+    //public abstract int CheckID<K, Z>(K a, Z p);
+
+
 }
+

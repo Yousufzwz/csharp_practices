@@ -2,6 +2,7 @@
 
 using Exam02_SampleQ_9;
 using System.Collections;
+using System.Text;
 
 string txt = "This.is!a,sample text";
 string[] txtWords=txt.Split(new char[] {' ', '.', ',', '?', '!'});
@@ -71,6 +72,7 @@ numbers.Add(1);
 numbers.Add(2);
 numbers.Add(3);
 
+
 numbers[2] = 1000;
 numbers.Remove(1);
 
@@ -91,6 +93,8 @@ count = numbers.Count;
 Console.WriteLine(count);
 
 
+
+
 Console.WriteLine();
 var person = GetPerson();
 Console.WriteLine(person.name);
@@ -106,3 +110,73 @@ Console.WriteLine();
 
 MyTests<string, int> sampleData = new MyTests<string, int>("Zakariya", 29);
 sampleData.PrintTuple();
+
+Console.WriteLine();
+
+SortedDictionary<int, string> fruitsData=new SortedDictionary<int, string>();
+fruitsData.Add(2, "Jackfruit");
+fruitsData.Add(3, "Berry");
+fruitsData.Add(1, "Lichi");
+
+foreach(var pair in fruitsData)
+{
+    Console.WriteLine("Key: "+ pair.Key+ " Value: "+ pair.Value);
+}
+
+fruitsData.Remove(2);
+Console.WriteLine("After removing an item:");
+
+foreach(var pair in fruitsData)
+{
+    Console.WriteLine("Key: " + pair.Key + " Value: " + pair.Value);
+
+}
+
+bool reallyContains=fruitsData.ContainsKey(3);
+Console.WriteLine("Contains key : "+reallyContains);
+
+bool containsFruit = fruitsData.ContainsValue("Mango");
+Console.WriteLine("this fruit contained here: "+ containsFruit);
+
+fruitsData.Clear();
+foreach (var p in fruitsData)
+{
+    Console.WriteLine("Key: " + p.Key + " Value: " + p.Value );
+
+}
+
+Console.WriteLine();
+
+
+var productData = (price: 180, name: "US-POLO-Shirt", id: 9881);
+Console.WriteLine(productData.name);
+Console.WriteLine(productData.price);
+productData.name = "H&M-Shirt";
+productData.price = 170;
+Console.WriteLine(productData.name);
+Console.WriteLine(productData.price);
+
+var res = PD(2);
+Console.WriteLine(res);
+
+(int price, string name, int id) PD(int id)
+{
+    if(id==2)
+    {
+        return (2, "Mask", 10090);
+    }
+    return (0, "Unknown", 0);
+}
+
+
+Console.WriteLine();
+
+StringBuilder strings= new StringBuilder();
+strings.Append("Hi, ");
+strings.Append("where!!");
+
+strings.Insert(3, "I am");
+strings.Replace("where!!", "here.");
+strings.Remove(0, 3);
+
+Console.WriteLine(strings);
