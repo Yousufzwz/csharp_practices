@@ -180,3 +180,12 @@ strings.Replace("where!!", "here.");
 strings.Remove(0, 3);
 
 Console.WriteLine(strings);
+
+
+DateTime now = DateTime.Today;
+Console.WriteLine(now);
+DateTime nextWillBe = now.AddDays(100);
+string dw = nextWillBe.DayOfWeek.ToString();
+string month = nextWillBe.ToString("MMMM");
+
+Console.WriteLine($"After 100 days, {dw} of {month}.");
