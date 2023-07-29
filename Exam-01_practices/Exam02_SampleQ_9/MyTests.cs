@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exam02_SampleQ_9;
 
-internal class MyTests<T1, T2>
+internal class MyTests<Type1, Type2>
 {
-    private (T1, T2) sampleTuple;
+    private (Type1, Type2) sampleTuple;
 
-    public MyTests(T1 name, T2 age)
+    public MyTests(Type1 name, Type2 age)
     {
         sampleTuple=(name, age);
     }
