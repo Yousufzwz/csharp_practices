@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exam02_SampleQ_6", "Exam02_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exam02_SampleQ_8", "Exam02_SampleQ_8\Exam02_SampleQ_8.csproj", "{FC6C087C-D42B-4404-8D52-A23E735855B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam02_SampleQ_9", "Exam02_SampleQ_9\Exam02_SampleQ_9.csproj", "{C6610FBF-0247-4D8F-A6EC-FFFF334A3599}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exam02_SampleQ_9", "Exam02_SampleQ_9\Exam02_SampleQ_9.csproj", "{C6610FBF-0247-4D8F-A6EC-FFFF334A3599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkExample", "EntityFrameworkExample\EntityFrameworkExample.csproj", "{E179CBAE-C775-483A-8347-64ACACB2CF57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{C6610FBF-0247-4D8F-A6EC-FFFF334A3599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6610FBF-0247-4D8F-A6EC-FFFF334A3599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6610FBF-0247-4D8F-A6EC-FFFF334A3599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E179CBAE-C775-483A-8347-64ACACB2CF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E179CBAE-C775-483A-8347-64ACACB2CF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E179CBAE-C775-483A-8347-64ACACB2CF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E179CBAE-C775-483A-8347-64ACACB2CF57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
