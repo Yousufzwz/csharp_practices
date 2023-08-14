@@ -4,6 +4,9 @@
 //Linq
 #region Linq1
 using PracticesForExam_3;
+using System.Collections.Concurrent;
+using System.Text;
+using System.Threading.Channels;
 using System.Xml.Linq;
 
 List<int>numbers= new List<int> { 70, 10, 5, 2, 3};
@@ -95,6 +98,142 @@ foreach (var result in ageByCourse)
 #endregion
 
 //Delegate
+#region Delegate1
+Console.WriteLine();
+
+Notifier notifier = new Notifier();
+notifier.Notification += SendEmail;
+notifier.Notification += SendSMS;
+
+notifier.SendNotification("Important message!!!");
+
+notifier.Notification -= SendEmail;
+
+notifier.SendNotification("Information updated.");
+
+
+void SendEmail(string message)
+{
+    Console.WriteLine($"Sending email: {message}");
+}
+
+void SendSMS(string message)
+{
+    Console.WriteLine($"Sending SMS: {message}");
+}
+
+Console.WriteLine();
+
+
+WeatherStation station = new WeatherStation();
+RemoteDisplay remoteDisplay = new RemoteDisplay();
+
+station.WeatherChanged += remoteDisplay.ShowWeather;
+
+station.CurrentTemp = 32.6;
+station.CurrentTemp = 30.5;
+
+station.WeatherChanged -= remoteDisplay.ShowWeather;
+
+station.CurrentTemp = 31.3;
+
+Console.WriteLine();
+#endregion
+
+//Func, Lambda
+#region Func, Lambda
+Func<int, int> square = x => x * x;
+int res = square(5);
+Console.WriteLine(res);
+
+int[] nums = { 9, 2, 3, 5, 1, 8 };
+var evens=nums.Where(x=>x %2 == 0);
+
+foreach(int en in evens)
+Console.WriteLine(en);
+
+Console.WriteLine();
+
+Func<double, double>CalcCircleArea = r =>Math.PI * r *r;
+double ca = CalcCircleArea(3.0);
+Console.WriteLine(ca);
+
+Console.WriteLine();
+
+List<string> names = new List<string>
+{
+    "Mahmud", "Ahmad", "Zakariya", "Idris"
+};
+
+names.Sort((n1, n2)=> n1.CompareTo(n2));    
+foreach(string sortedNames in names)
+    Console.WriteLine(sortedNames);
+
+Console.WriteLine();
+#endregion
+
+//FileStream
+
+//string filePath = "newSample.txt";
+
+//using (FileStream fileStream = new FileStream(filePath, FileMode.Create)) 
+//{
+//    string data = "Hi, there!";
+//    byte[] bytes= Encoding.UTF8.GetBytes(data);
+//    fileStream.Write(bytes, 0, bytes.Length);   
+//}
+
+//Console.WriteLine("Data written in the file");
+
+//using (FileStream fileStream2 = new FileStream(filePath, FileMode.Create))
+//{
+//    byte[] buffer = new byte[fileStream2.Length];
+//    int byteRead=fileStream2.Read(buffer, 0, buffer.Length);
+//    string readData= Encoding.UTF8.GetString(buffer, 0, byteRead);
+//    Console.WriteLine($"Read from file: {readData}");
+
+//}
+
+Console.WriteLine();
+
+
+//Action
+List<int> newNums= new List<int> {9,2,3,6,1,5 };
+
+Action<int> printAndDouble = nums => Console.WriteLine($"Previous:{nums}, After doubling: {nums * 2}");
+foreach(int num in newNums)
+    printAndDouble(num);
+
+Console.WriteLine(  );
+
+List<Product> products = new List<Product>();
+products.Add(new Product() {Name ="Smart Phone", Price=15000 });
+products.Add(new Product() { Name = "Camera", Price = 25000 });
+products.Add(new Product() { Name = "Tablet", Price = 35000 });
+products.Add(new Product() { Name = "Laptom", Price = 55000 });
+products.Add(new Product() { Name = "Computer", Price = 85000 });
+
+Action<Product> processProduct = products =>
+{
+    Console.WriteLine($"Product: {products.Name}");
+    Console.WriteLine($"Price: {products.Price}");
+
+    if (products.Price >= 35000)
+    {
+        Console.WriteLine("High priced products");
+    }
+    else
+    {
+        Console.WriteLine("Low priced products");
+    }
+    Console.WriteLine(  );
+};
+
+foreach(Product product in products)
+{
+    processProduct(product);
+}
+
 
 
 
