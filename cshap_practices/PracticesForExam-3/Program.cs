@@ -4,7 +4,12 @@
 //Linq
 #region Linq1
 using PracticesForExam_3;
+using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Channels;
 using System.Xml.Linq;
@@ -235,6 +240,19 @@ foreach(Product product in products)
 }
 
 
+
+string[] wordss = { "blueberry", "chimpanzee", "abacus", "banana", "apple", "cheese" };
+var wordGroups = from w in words
+                 group w by w[0] into g
+                 select (FirstLetter: g.Key, Words: g);
+foreach (var g in wordGroups)
+{
+    Console.WriteLine("Words that start with the letter '{0}':", g.FirstLetter);
+    foreach (var w in g.Words)
+    {
+        Console.WriteLine(w);
+    }
+}
 
 
 
