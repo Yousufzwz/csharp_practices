@@ -22,3 +22,10 @@ MethodInfo talkMethod= t.GetMethod("Talk",
     BindingFlags.Instance | BindingFlags.NonPublic, new Type[] {typeof(string)});
 
 talkMethod.Invoke(person, new object[] { "Assalamualaikum" });    
+
+
+
+
+
+
+
